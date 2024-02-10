@@ -1,0 +1,196 @@
+body {
+  background-color: #3498db;
+  font-family: "Poppins";
+}
+
+ul,
+li ol {
+  list-style: none;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  color: #ff4757;
+  font-family: "Poppins";
+  font-weight: 700;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.container .quiz-card {
+  -webkit-box-shadow: -4px 25px 10px 0px rgba(112, 112, 112, 0.5);
+  box-shadow: -4px 25px 10px 0px rgba(112, 112, 112, 0.5);
+  width: 35rem;
+  padding: 2rem;
+  height: 32rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border-radius: 0.6rem;
+  background-color: #fff;
+}
+
+.container .quiz-card .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom: 2px solid #aaa;
+}
+
+.container .quiz-card .top .progresBar {
+  margin-bottom: 1rem;
+  display: inline-block;
+  width: 10rem;
+  position: relative;
+  background-color: transparent;
+  border: 2px solid lightgreen;
+  border-radius: 5rem;
+  height: 1rem;
+  overflow: hidden;
+}
+
+.container .quiz-card .top .progresBarFull {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  border-radius: 5rem;
+  background-color: lightgreen;
+  -webkit-transition: 0.7s ease;
+  transition: 0.7s ease;
+}
+
+.container .quiz-card .top .timerBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.container .quiz-card .top .timerBar .timer {
+  width: 10rem;
+  height: 3rem;
+  background-color: #aaa;
+  text-align: center;
+  line-height: 3rem;
+  color: #fff;
+  font-weight: 400;
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+
+.container .quiz-card .top .timerBar .timer .second {
+  position: relative;
+  width: 4rem;
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
+  right: -1rem;
+  text-align: center;
+  font-size: 1.3rem;
+  display: inline-block;
+  background-color: #333;
+}
+
+.container .questions {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.container .options {
+  padding-top: 0.1rem;
+  height: 6rem;
+}
+
+.container .message {
+  display: none;
+  position: relative;
+  top: 7rem;
+  color: #ff4757;
+}
+
+.container .show {
+  display: block;
+  color: #ff4757;
+}
+
+.container .hidden {
+  display: none;
+}
+
+.container input,
+.container label {
+  cursor: pointer;
+}
+
+.container ul li {
+  height: 3rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.container .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: auto;
+  position: relative;
+  top: 32%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 3rem;
+}
+
+.container .quiznumber {
+  position: relative;
+  top: 17px;
+}
+
+.container .next-btn {
+  position: relative;
+  top: 39%;
+  width: 9rem;
+  border: none;
+  outline: none;
+  background-color: #3498db;
+  padding: 0.6rem;
+  left: 1%;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  cursor: pointer;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.container .next-btn .fa-chevron-right {
+  display: inline-block;
+  margin-left: 0.3rem;
+}
+
+.container .next-btn:hover {
+  background-color: #2d2db4;
+}

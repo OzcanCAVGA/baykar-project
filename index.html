@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="quiz-card">
+        <div class="top">
+          <div class="progresBar">
+            <div class="progresBarFull"></div>
+          </div>
+          <div class="timerBar">
+            <div class="timer">
+              Time Left
+              <div class="second">0</div>
+            </div>
+          </div>
+        </div>
+        <div class="question__container"></div>
+        <div class="options"></div>
+        <span class="message">Question fields cannot be left blank !</span>
+        <div class="buttons">
+          <div class="quiznumber"></div>
+          <button type="button" class="next-btn">
+            Next Question <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/index.js" type="module"></script>
+  </body>
+</html>
